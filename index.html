@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eZuite – Employee</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  
+  <div id="toast" class="toast"></div>
+
+  
+  <div id="overlay" class="overlay"></div>
+
+  <!-- delete modal -->
+  <div id="deleteModal" class="modal">
+    <div class="modal-box">
+      <div class="modal-icon">
+        <img src="icons/trash.png" width="28" height="28" alt="delete"/>
+      </div>
+      <h3>Delete Employee</h3>
+      <p id="deleteModalMsg">Are you sure you want to delete this employee?</p>
+      <div class="modal-actions">
+        <button class="btn-cancel" id="cancelDelete">Cancel</button>
+        <button class="btn-danger" id="confirmDelete">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="rightPanel" class="right-panel">
+    <div class="panel-header">
+      <span id="panelTitle">Employee Details</span>
+      <button class="panel-close" id="closePanel">
+        <img src="icons/close.png" width="18" height="18" alt="close"/>
+      </button>
+    </div>
+    <div class="panel-body" id="panelBody"></div>
+    <div class="panel-footer" id="panelFooter"></div>
+  </div>
+
+  
+  <header class="navbar">
+    <div class="navbar-left">
+      <div class="logo-wrap">
+        <img src="icons/logo.png" width="22" height="22" alt="eZuite logo"/>
+      </div>
+      <span class="brand">eZuite</span>
+      <div class="breadcrumb">
+        <img src="icons/folder.png" width="14" height="14" alt="folder"/>
+        <span class="bc-text">eCore</span>
+        <img src="icons/chevron-right.png" width="10" height="10" alt=">"/>
+        <span class="bc-text active">Employee</span>
+        <img src="icons/star.png" class="bc-act" width="14" height="14" alt="star"/>
+        <img src="icons/plus-square.png" class="bc-act" width="14" height="14" alt="add"/>
+      </div>
+    </div>
+    <div class="navbar-right">
+      <div class="nav-user">
+        <span class="nav-company">ENHANZER</span>
+        <span class="nav-name">User</span>
+      </div>
+      <div class="avatar">U</div>
+      <button class="nav-icon-btn">
+        <img src="icons/bell.png" width="18" height="18" alt="notifications"/>
+      </button>
+      <button class="nav-icon-btn">
+        <img src="icons/settings.png" width="18" height="18" alt="settings"/>
+      </button>
+    </div>
+  </header>
+
+  <div class="app-body">
+
+    
+    <aside class="sidebar">
+      <div class="sidebar-item active">
+        <img src="icons/home.png" width="20" height="20" alt="home"/>
+        <span>Home</span>
+      </div>
+      <div class="sidebar-item">
+        <img src="icons/monitor.png" width="20" height="20" alt="core"/>
+        <span>Core</span>
+      </div>
+      <div class="sidebar-item">
+        <img src="icons/cart.png" width="20" height="20" alt="procurement"/>
+        <span>Procure</span>
+      </div>
+      <div class="sidebar-item">
+        <img src="icons/list.png" width="20" height="20" alt="inventory"/>
+        <span>Inventory</span>
+      </div>
+      <div class="sidebar-item">
+        <img src="icons/settings.png" width="20" height="20" alt="manufacture"/>
+        <span>Manufact</span>
+      </div>
+      <div class="sidebar-item">
+        <img src="icons/bar-chart.png" width="20" height="20" alt="sales"/>
+        <span>Sales</span>
+      </div>
+      <div class="sidebar-item">
+        <img src="icons/dollar.png" width="20" height="20" alt="finance"/>
+        <span>Finance</span>
+      </div>
+      <div class="sidebar-item">
+        <img src="icons/box.png" width="20" height="20" alt="assets"/>
+        <span>Assets</span>
+      </div>
+      <div class="sidebar-item">
+        <img src="icons/database.png" width="20" height="20" alt="database"/>
+        <span>Database</span>
+      </div>
+    </aside>
+
+    
+    <main class="main">
+
+      <div class="toolbar">
+        <div class="tabs">
+          <button class="tab active" data-tab="active">
+            <img src="icons/check.png" width="14" height="14" alt="active"/>
+            Active <span class="badge" id="badge-active">0</span>
+          </button>
+          <button class="tab" data-tab="drafts">
+            <img src="icons/edit.png" width="14" height="14" alt="drafts"/>
+            Drafts <span class="badge" id="badge-drafts">0</span>
+          </button>
+          <button class="tab" data-tab="inactive">
+            <img src="icons/slash.png" width="14" height="14" alt="inactive"/>
+            Inactive <span class="badge" id="badge-inactive">0</span>
+          </button>
+          <button class="tab" data-tab="deleted">
+            <img src="icons/trash.png" width="14" height="14" alt="deleted"/>
+            Deleted <span class="badge" id="badge-deleted">0</span>
+          </button>
+        </div>
+        <div class="right-toolbar">
+          <div class="search-box">
+            <img src="icons/search.png" width="14" height="14" alt="search"/>
+            <input type="text" id="searchInput" placeholder="Filter employees..."/>
+          </div>
+          <button class="btn-add" id="addBtn">
+            <img src="icons/plus.png" width="15" height="15" alt="add"/>
+            Add Employee
+          </button>
+          <div class="pagination" id="pagination"></div>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table id="empTable">
+          <thead>
+            <tr>
+              <th class="sortable" data-col="first">FIRST NAME <span class="sort-icon">↕</span></th>
+              <th class="sortable" data-col="last">LAST NAME <span class="sort-icon">↕</span></th>
+              <th>ADDRESS</th>
+              <th class="sortable" data-col="mobile">MOBILE <span class="sort-icon">↕</span></th>
+              <th>EMAIL</th>
+              <th class="sortable" data-col="dept">DEPARTMENT <span class="sort-icon">↕</span></th>
+              <th class="sortable" data-col="desig">DESIGNATION <span class="sort-icon">↕</span></th>
+              <th class="sortable" data-col="updated">UPDATED <span class="sort-icon">↕</span></th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+        <div class="empty-state" id="emptyState" style="display:none">
+          <img src="icons/users.png" width="48" height="48" alt="no employees"/>
+          <p>No employees found</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-left">
+          <img src="icons/refresh.png" width="12" height="12" alt="version"/>
+          v 3.2.1
+          <span>© 2026 eZuite Platform. All rights reserved.</span>
+        </div>
+        <div class="footer-right">
+          <a href="#">Support</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
