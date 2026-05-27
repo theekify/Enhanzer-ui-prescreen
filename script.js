@@ -1,36 +1,36 @@
 const DB = {
   active: [
-    { id:1,  first:"John",    last:"Doe",      address:"123 Elm Street",      mobile:"555-1234", email:"john.doe@example.com",       dept:"Sales",       desig:"Manager",      updated:"2024-03-03 1:45PM" },
-    { id:2,  first:"Jane",    last:"Smith",     address:"456 Oak Avenue",      mobile:"555-5678", email:"jane.smith@example.com",      dept:"Marketing",   desig:"Director",     updated:"2024-03-03 2:30PM" },
-    { id:3,  first:"Alice",   last:"Johnson",   address:"789 Pine Road",       mobile:"555-6785", email:"alice.johnson@example.com",   dept:"HR",          desig:"Coordinator",  updated:"2024-03-03 2:35PM" },
-    { id:4,  first:"Bob",     last:"Brown",     address:"321 Maple Lane",      mobile:"555-2345", email:"bob.brown@example.com",       dept:"IT",          desig:"Technician",   updated:"2024-03-03 3:05PM" },
-    { id:5,  first:"Charlie", last:"Davis",     address:"654 Birch Boulevard", mobile:"555-3456", email:"charlie.davis@example.com",   dept:"Finance",     desig:"Analyst",      updated:"2024-03-03 3:35PM" },
-    { id:6,  first:"Eva",     last:"Miller",    address:"987 Cedar Street",    mobile:"555-4567", email:"eva.miller@example.com",      dept:"Operations",  desig:"Supervisor",   updated:"2024-03-03 3:35PM" },
-    { id:7,  first:"Frank",   last:"Wilson",    address:"321 Spruce Way",      mobile:"555-9978", email:"frank.wilson@example.com",    dept:"Legal",       desig:"Consultant",   updated:"2024-03-03 4:05PM" },
-    { id:8,  first:"Grace",   last:"Lee",       address:"564 Palm Drive",      mobile:"555-6709", email:"grace.lee@example.com",       dept:"Engineering", desig:"Developer",    updated:"2024-03-03 4:20PM" },
-    { id:9,  first:"Henry",   last:"Taylor",    address:"887 Fir Street",      mobile:"555-1090", email:"henry.taylor@example.com",    dept:"R&D",         desig:"Scientist",    updated:"2024-03-03 4:00PM" },
-    { id:10, first:"Isabel",  last:"Anderson",  address:"123 Aspen Court",     mobile:"555-8401", email:"isabel.anderson@example.com", dept:"Support",     desig:"Agent",        updated:"2024-03-03 4:30PM" },
-    { id:11, first:"Jack",    last:"Thomas",    address:"456 Cypress Avenue",  mobile:"555-9910", email:"jack.thomas@example.com",     dept:"QA",          desig:"Inspector",    updated:"2024-03-03 4:45PM" },
-    { id:12, first:"Karen",   last:"Jackson",   address:"700 Redwood Road",    mobile:"555-0115", email:"karen.jackson@example.com",   dept:"Logistics",   desig:"Coordinator",  updated:"2024-03-03 5:00PM" },
-    { id:13, first:"Liam",    last:"White",     address:"88 Birchwood Lane",   mobile:"555-2200", email:"liam.white@example.com",      dept:"IT",          desig:"Engineer",     updated:"2024-03-03 5:10PM" },
-    { id:14, first:"Mia",     last:"Harris",    address:"230 Oakwood Drive",   mobile:"555-3311", email:"mia.harris@example.com",      dept:"Marketing",   desig:"Specialist",   updated:"2024-03-03 5:20PM" },
-    { id:15, first:"Noah",    last:"Martin",    address:"910 Elmwood Street",  mobile:"555-4422", email:"noah.martin@example.com",     dept:"Finance",     desig:"Accountant",   updated:"2024-03-03 5:30PM" },
-    { id:16, first:"Olivia",  last:"Garcia",    address:"45 Mapleton Road",    mobile:"555-5533", email:"olivia.garcia@example.com",   dept:"HR",          desig:"Manager",      updated:"2024-03-03 5:45PM" },
+    { id:1,  first:"John",    last:"Doe",      address:"123 Elm Street",      mobile:"555-1234", email:"john.doe@example.com",       dept:"Sales",       desig:"Manager",      updated:"2026-03-03 1:45PM" },
+    { id:2,  first:"Jane",    last:"Smith",     address:"456 Oak Avenue",      mobile:"555-5678", email:"jane.smith@example.com",      dept:"Marketing",   desig:"Director",     updated:"2026-03-03 2:30PM" },
+    { id:3,  first:"Alice",   last:"Johnson",   address:"789 Pine Road",       mobile:"555-6785", email:"alice.johnson@example.com",   dept:"HR",          desig:"Coordinator",  updated:"2026-03-03 2:35PM" },
+    { id:4,  first:"Bob",     last:"Brown",     address:"321 Maple Lane",      mobile:"555-2345", email:"bob.brown@example.com",       dept:"IT",          desig:"Technician",   updated:"2026-03-03 3:05PM" },
+    { id:5,  first:"Charlie", last:"Davis",     address:"654 Birch Boulevard", mobile:"555-3456", email:"charlie.davis@example.com",   dept:"Finance",     desig:"Analyst",      updated:"2026-03-03 3:35PM" },
+    { id:6,  first:"Eva",     last:"Miller",    address:"987 Cedar Street",    mobile:"555-4567", email:"eva.miller@example.com",      dept:"Operations",  desig:"Supervisor",   updated:"2026-03-03 3:35PM" },
+    { id:7,  first:"Frank",   last:"Wilson",    address:"321 Spruce Way",      mobile:"555-9978", email:"frank.wilson@example.com",    dept:"Legal",       desig:"Consultant",   updated:"2026-03-03 4:05PM" },
+    { id:8,  first:"Grace",   last:"Lee",       address:"564 Palm Drive",      mobile:"555-6709", email:"grace.lee@example.com",       dept:"Engineering", desig:"Developer",    updated:"2026-03-03 4:20PM" },
+    { id:9,  first:"Henry",   last:"Taylor",    address:"887 Fir Street",      mobile:"555-1090", email:"henry.taylor@example.com",    dept:"R&D",         desig:"Scientist",    updated:"2026-03-03 4:00PM" },
+    { id:10, first:"Isabel",  last:"Anderson",  address:"123 Aspen Court",     mobile:"555-8401", email:"isabel.anderson@example.com", dept:"Support",     desig:"Agent",        updated:"2026-03-03 4:30PM" },
+    { id:11, first:"Jack",    last:"Thomas",    address:"456 Cypress Avenue",  mobile:"555-9910", email:"jack.thomas@example.com",     dept:"QA",          desig:"Inspector",    updated:"2026-03-03 4:45PM" },
+    { id:12, first:"Karen",   last:"Jackson",   address:"700 Redwood Road",    mobile:"555-0115", email:"karen.jackson@example.com",   dept:"Logistics",   desig:"Coordinator",  updated:"2026-03-03 5:00PM" },
+    { id:13, first:"Liam",    last:"White",     address:"88 Birchwood Lane",   mobile:"555-2200", email:"liam.white@example.com",      dept:"IT",          desig:"Engineer",     updated:"2026-03-03 5:10PM" },
+    { id:14, first:"Mia",     last:"Harris",    address:"230 Oakwood Drive",   mobile:"555-3311", email:"mia.harris@example.com",      dept:"Marketing",   desig:"Specialist",   updated:"2026-03-03 5:20PM" },
+    { id:15, first:"Noah",    last:"Martin",    address:"910 Elmwood Street",  mobile:"555-4422", email:"noah.martin@example.com]",     dept:"Finance]",     desig:"Accountant]",   updated:"2026-03-03 5:30PM" },
+    { id:16, first:"Olivia]",  last:"Garcia]",    address:"45 Mapleton Road]",    mobile:"555-5533]", email:"olivia.garcia@example.com]",   dept:"HR]",          desig:"Manager]",      updated:"2026-03-03 5:45PM" },
   ],
   drafts: [
-    { id:17, first:"Peter",  last:"Clark",    address:"12 Willow Way",   mobile:"555-6644", email:"peter.clark@example.com",    dept:"Sales",   desig:"Trainee",  updated:"2024-03-01 9:00AM"  },
-    { id:18, first:"Quinn",  last:"Lewis",    address:"34 Sunset Blvd",  mobile:"555-7755", email:"quinn.lewis@example.com",    dept:"IT",      desig:"Intern",   updated:"2024-03-01 9:30AM"  },
-    { id:19, first:"Rachel", last:"Robinson", address:"56 Sunrise Ave",  mobile:"555-8866", email:"rachel.robinson@example.com",dept:"Finance", desig:"Analyst",  updated:"2024-03-01 10:00AM" },
+    { id:17, first:"Peter",  last:"Clark",    address:"12 Willow Way",   mobile:"555-6644", email:"peter.clark@example.com",    dept:"Sales",   desig:"Trainee",  updated:"2026-03-01 9:00AM"  },
+    { id:18, first:"Quinn",  last:"Lewis",    address:"34 Sunset Blvd",  mobile:"555-7755", email:"quinn.lewis@example.com",    dept:"IT",      desig:"Intern",   updated:"2026-03-01 9:30AM"  },
+    { id:19, first:"Rachel", last:"Robinson", address:"56 Sunrise Ave",  mobile:"555-8866", email:"rachel.robinson@example.com",dept:"Finance", desig:"Analyst",  updated:"2026-03-01 10:00AM" },
   ],
   inactive: [
-    { id:20, first:"Sam",    last:"Walker", address:"78 Hillcrest Road",  mobile:"555-9977", email:"sam.walker@example.com",   dept:"Operations",  desig:"Ex-Supervisor",  updated:"2023-12-01 2:00PM"  },
-    { id:21, first:"Tina",   last:"Hall",   address:"90 Valley View",     mobile:"555-1100", email:"tina.hall@example.com",    dept:"HR",          desig:"Ex-Coordinator", updated:"2023-11-15 3:00PM"  },
-    { id:22, first:"Uma",    last:"Allen",  address:"102 Lakeview Drive", mobile:"555-2211", email:"uma.allen@example.com",    dept:"Marketing",   desig:"Ex-Director",    updated:"2023-10-10 1:00PM"  },
-    { id:23, first:"Victor", last:"Young",  address:"114 Riverside Ave",  mobile:"555-3322", email:"victor.young@example.com", dept:"Engineering", desig:"Ex-Developer",   updated:"2023-09-05 11:00AM" },
+    { id:20, first:"Sam",    last:"Walker", address:"78 Hillcrest Road",  mobile:"555-9977", email:"sam.walker@example.com",   dept:"Operations",  desig:"Ex-Supervisor",  updated:"2026-12-01 2:00PM"  },
+    { id:21, first:"Tina",   last:"Hall",   address:"90 Valley View",     mobile:"555-1100", email:"tina.hall@example.com",    dept:"HR",          desig:"Ex-Coordinator", updated:"2026-11-15 3:00PM"  },
+    { id:22, first:"Uma",    last:"Allen",  address:"102 Lakeview Drive", mobile:"555-2211", email:"uma.allen@example.com",    dept:"Marketing",   desig:"Ex-Director",    updated:"2026-10-10 1:00PM"  },
+    { id:23, first:"Victor", last:"Young",  address:"114 Riverside Ave",  mobile:"555-3322", email:"victor.young@example.com", dept:"Engineering", desig:"Ex-Developer",   updated:"2026-09-05 11:00AM" },
   ],
   deleted: [
-    { id:24, first:"Wendy",  last:"Hernandez", address:"126 Forest Lane",     mobile:"555-4433", email:"wendy.hernandez@example.com", dept:"Legal", desig:"Ex-Consultant", updated:"2023-06-01 9:00AM"  },
-    { id:25, first:"Xander", last:"King",      address:"138 Mountain Road",   mobile:"555-5544", email:"xander.king@example.com",     dept:"QA",    desig:"Ex-Inspector",  updated:"2023-05-12 10:00AM" },
+    { id:24, first:"Wendy",  last:"Hernandez", address:"126 Forest Lane",     mobile:"555-4433", email:"wendy.hernandez@example.com", dept:"Legal", desig:"Ex-Consultant", updated:"2026-06-01 9:00AM"  },
+    { id:25, first:"Xander", last:"King",      address:"138 Mountain Road",   mobile:"555-5544", email:"xander.king@example.com",     dept:"QA",    desig:"Ex-Inspector",  updated:"2026-05-12 10:00AM" },
   ]
 };
 
@@ -105,7 +105,7 @@ function closePanel() {
   document.querySelectorAll("tbody tr").forEach(r => r.classList.remove("selected"));
 }
 
-// build footer buttons for detail view
+
 function setDetailFooter(emp) {
   const footer = document.getElementById("panelFooter");
   footer.innerHTML = "";
@@ -290,7 +290,7 @@ function showAddForm() {
   openPanel();
 }
 
-// delete confirm
+
 document.getElementById("confirmDelete").onclick = () => {
   if (!deleteTarget) return;
   const emp = deleteTarget;
@@ -314,7 +314,7 @@ document.getElementById("cancelDelete").onclick = () => {
 };
 
 function render() {
-  // update tab badges
+
   Object.keys(DB).forEach(k => {
     const el = document.getElementById("badge-" + k);
     if (el) el.textContent = DB[k].length;
@@ -353,7 +353,7 @@ function render() {
     });
   }
 
-  // pagination
+
   const cont = document.getElementById("pagination");
   const total = totalPages();
   cont.innerHTML = "";
@@ -372,19 +372,19 @@ function render() {
   }
   const next = document.createElement("button");
   next.className = "page-btn";
-  next.innerHTML = `<img src="icons/chevron-right.png" width="11" height="11" alt="next"/>`;
+  next.innerHTML = `<img src="icons/chevron-right-black.png" width="11" height="11" alt="next"/>`;
   next.disabled = currentPage === total;
   next.onclick = () => { currentPage++; render(); };
   cont.appendChild(next);
 
-  // sort arrows
+
   document.querySelectorAll("thead th").forEach(th => {
     th.classList.remove("sort-asc", "sort-desc");
     if (th.dataset.col === sortCol) th.classList.add(sortDir === "asc" ? "sort-asc" : "sort-desc");
   });
 }
 
-// tabs
+
 document.querySelectorAll(".tab").forEach(tab => {
   tab.addEventListener("click", () => {
     document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
@@ -399,14 +399,13 @@ document.querySelectorAll(".tab").forEach(tab => {
   });
 });
 
-// search
+
 document.getElementById("searchInput").addEventListener("input", e => {
   search = e.target.value.trim();
   currentPage = 1;
   render();
 });
 
-// sort on header click
 document.querySelectorAll("thead th.sortable").forEach(th => {
   th.addEventListener("click", () => {
     if (sortCol === th.dataset.col) sortDir = sortDir === "asc" ? "desc" : "asc";
@@ -416,7 +415,6 @@ document.querySelectorAll("thead th.sortable").forEach(th => {
   });
 });
 
-// sidebar active
 document.querySelectorAll(".sidebar-item").forEach(item => {
   item.addEventListener("click", () => {
     document.querySelectorAll(".sidebar-item").forEach(s => s.classList.remove("active"));
